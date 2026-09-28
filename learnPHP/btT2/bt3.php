@@ -49,13 +49,13 @@
 
     ?>
 
-     <form name="tinhtendien" method="post" action="bt3.php" style="margin:auto; width:500px; background-color: #dddf95;" >
+     <form name="tinhtendien" method="post" action="bt3.php" style="margin:auto; width:500px; background-color: rgb(238, 230, 230);" >
  
         <table>
         
                 <tr>
                     <td colspan="2"
-                        style=" text-align:center; background-color: #e7ad6b; font-size:20px; color: #aa5151; width: 500px;  height: 30px; font-weight: bold;">
+                        style=" text-align:center; background-color: #f0e991; font-size:20px; color: #b34343; width: 500px;  height: 30px; font-weight: bold;">
                         THANH TOÁN TIỀN ĐIỆN
                     </td>
                 </tr>
@@ -66,13 +66,13 @@
                 </tr>
 
                 <tr >
-                    <td>Chỉ số cũ: <input type="text"    name="chiSoCu"    value="<?php echo $chiSoCu; ?>"     style=" width: 150px; margin-left: 106px;"> (Kw)    
+                    <td>Chỉ số cũ: <input type="text"   name="chiSoCu"  value="<?php echo $chiSoCu; ?>"  style=" width: 150px; margin-left: 106px;"> (Kw)    
                     </td>
                 </tr>
 
                 <tr >
                     <td>Chỉ số mới
-                        <input type="text"    name="chiSoMoi"    value="<?php echo $chiSoMoi; ?>"  style=" width: 150px; margin-left: 100px;"> (Kw)    
+                        <input type="text"  name="chiSoMoi" value="<?php echo $chiSoMoi; ?>"  style=" width: 150px; margin-left: 100px;"> (Kw)    
                     </td>
                 </tr>
                 
