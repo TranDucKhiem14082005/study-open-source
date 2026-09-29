@@ -68,7 +68,6 @@
     method="post" action="bt5.php" style="margin:auto; width:400px; background-color: #1cabad;">
 
         <table>
-        
                 <tr>
                     <td colspan="2"
                         style=" text-align:center; background-color: #177e80; font-size:20px; color: #ffffff; width: 400px;  height: 50px; font-weight: bold;">
