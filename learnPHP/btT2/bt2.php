@@ -91,7 +91,7 @@
 
                 <tr >
                     <td align="center">
-                        <input type="submit" name="tinh" value="Tính"></input>
+                        <button type="submit" name="tinh" value="Tính">Tính</button>
                     </td>
                 </tr>
 

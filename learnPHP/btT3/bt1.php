@@ -7,11 +7,11 @@
 </head>
 <body>
     <?php 
-    $arr = [];
-    $s = 0;
-    $s1 = 0;
-    $s2 = 0;
-    $vt = -1;
+        $arr = [];
+        $s = 0;
+        $s1 = 0;
+        $s2 = 0;
+        $vt = -1;
         if(isset($_GET['btnThucHien'])){
             $SoN = $_GET['SoN'];
             if($SoN ==""){
