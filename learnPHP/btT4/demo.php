@@ -26,10 +26,11 @@
             echo "<br> <b>Kết nối thành công </b> <br>";
         }
         // $query = "SELECT * FROM khach_hang WHERE RIGHT(Dien_thoai,1 ) % 2 != 0"; 
-        $query = "SELECT DISTINCT khach_hang.* FROM khach_hang
-                JOIN hoa_don ON khach_hang.Ma_khach_hang = hoa_don.Ma_khach_hang
-                JOIN ct_hoadon ON ct_hoadon.So_hoa_don = hoa_don.So_hoa_don
-                JOIN sua ON ct_hoadon.Ma_sua = sua.Ma_sua WHERE sua.Ma_sua = 'AB0001'";
+        // $query = "SELECT DISTINCT khach_hang.* FROM khach_hang
+        //         JOIN hoa_don ON khach_hang.Ma_khach_hang = hoa_don.Ma_khach_hang
+        //         JOIN ct_hoadon ON ct_hoadon.So_hoa_don = hoa_don.So_hoa_don
+        //         JOIN sua ON ct_hoadon.Ma_sua = sua.Ma_sua WHERE sua.Ma_sua = 'AB0001'";
+        $query = "SELECT hs.Ten_hang_sua, hs.Dia_chi, hs.Dien_thoai FROM hang_sua hs";
         $result = mysqli_query($conn, $query);
         if(!$result){
             die("<b>Query thất bại: </b>" . mysqli_error($conn));
@@ -38,12 +39,9 @@
     ?>
     <table align="center" style = "text-align:center">
         <tr>
-            <th>Mã khách hàng</th>
-            <th>Tên khách hàng</th>
-            <th>Giới tính</th>
+            <th>Tên hãng sữa</th>
             <th>Địa chỉ</th>
             <th>Số điện thoại</th>
-            <th>Email</th>
         </tr>
         <?php
         if(mysqli_num_rows($result) != 0){
@@ -53,14 +51,6 @@
                 // if($socuoi % 2 != 0){
                     echo "<tr>";
                     for($i = 0; $i < mysqli_num_fields($result); $i++) {
-                        if($i == 2) {
-                            if($row[$i] == 0){
-                                echo "<td>Nam</td>";
-                            } else {
-                                echo "<td>Nữ</td>";
-                            }
-                        }
-                        else
                             echo "<td>" . $row[$i] . "</td>";
                     }
                 
